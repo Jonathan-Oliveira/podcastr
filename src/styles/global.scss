@@ -20,7 +20,16 @@
     --purple-500: #8257e5;
     --purple-800: #6f48c9;
 }
-
+@media (max-width: 1440px) {
+    html { 
+        font-size: 81.25%;// 13px
+     } 
+  }
+  @media (max-width: 1366px) {
+    html { 
+        font-size: 75%;// 12px
+    } 
+  }
 @media (max-width: 1080px) {
     html {
         font-size: 93.75%; //15px
@@ -31,6 +40,26 @@
         font-size: 87.5%; //14px
     }
 }
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: var(--gray-50);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--gray-100);
+    border-radius: 0px;
+    border: 0px;
+    &:hover {
+      background-color: var(--gray-200);
+    }
+    &:active {
+      background-color: var(--gray-500);
+    }
+  }
 
 body {
     background: var(--gray-50);
@@ -43,12 +72,7 @@ button {
     font: 500 1rem Inter, sans-serif;
     color: var(--gray-500);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
     font-family: Lexend, sans-serif;
     color: var(--gray-800);
