@@ -1,8 +1,9 @@
 .episode {
+    max-width: 70rem;
     margin: 0 auto;
     padding: 2rem 4rem;
     height: calc(100vh - 6.5rem);
-    overflow-y: scroll;
+    overflow-y: auto;
 
     .thumbnailContainer {
         position: relative;
